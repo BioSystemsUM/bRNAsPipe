@@ -2,7 +2,7 @@
 # This script does RNAseq Analysis
 
 ### Variables
-source ./Dirs.sh
+source Edit
 ScriptsFolder=$BaseDir/'scr/bash'
 Genome='GenomeRef'/$GenomeRef
 Annotation='Annotation'/$AnnoFName
@@ -54,3 +54,4 @@ $ScriptsFolder/htseq.sh $BaseDir $AlignmentsDir $Annotation $CountsDir
 
 ### Normalise counts of alinments to each gene:
 $ScriptsFolder/NormCounts.sh $BaseDir $Annotation $AnnotationDir $SamplesInfoFile $Study $CountsDir $NormDir
+

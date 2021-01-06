@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Run this script after downloading fastq raw data of one study, to determine read quality
 # To Run this script: GetQCfiles.sh <study we want>
-source ./Dirs.sh
+source Edit
 ScriptsFolder=$BaseDir/'scr/bash'
 Study=$1
 SamplesInfoFile=$BaseDir/'data/StudiesRNAseq.txt'

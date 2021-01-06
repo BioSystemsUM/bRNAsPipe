@@ -2,7 +2,7 @@
 # This script downloads fastq raw files for all studies at same time
 # and runs fastQC on raw data for those studies
 # To Run this script: DownloadFiles.sh <study we want>
-source ./Dirs.sh
+source Edit
 ScriptsFolder=$BaseDir/'scr/bash'
 SamplesInfoFile='data/Studies_RNAseq.txt'
 Study=$1
@@ -27,9 +27,7 @@ DirArray=($BaseDir/$StudyDir \
           $BaseDir/$ReadsDir \
           $BaseDir/$AlignmentsDir \
           $BaseDir/$CountsDir \
-	  $BaseDir/$NormDir
-          $BaseDir/$AnnotationDir \
-	  $BaseDir/$GenomeRefDir)
+	  $BaseDir/$NormDir)
 createDirIfMissing ${DirArray[@]}
 
 # Download raw data - fastq files:
