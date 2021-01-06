@@ -1,8 +1,8 @@
 ## Pipeline for RNAseq and Microarray analysis
 ### RNAseq
 Pipeline for RNAseq was developed in Bash and it uses docker containers. Requirements to run are: *Linux* system and *Podman*. It is recommended to use ensembl annotation and ensembl genome reference files.
- - Example annotation file: [Homo_sapiens.GRCh38.99.gtf.gz] (ftp://ftp.ensembl.org/pub/release-99/gtf/homo_sapiens/Homo_sapiens.GRCh38.99.gtf.gz)
- - Example genome reference fasta: [Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz] (ftp://ftp.ensembl.org/pub/release-99/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz)
+ - Example annotation file: [Homo_sapiens.GRCh38.99.gtf.gz](ftp://ftp.ensembl.org/pub/release-99/gtf/homo_sapiens/Homo_sapiens.GRCh38.99.gtf.gz)
+ - Example genome reference fasta: [Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz](ftp://ftp.ensembl.org/pub/release-99/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz)
 1. Fill **Studies_RNAseq.txt** with your studies info. **Studies_RNAseq.txt** is a tab-delimited file, under **data** directory. Columns:
  - *Study* is the study identifier
  - *SampleId* is sample identifier
