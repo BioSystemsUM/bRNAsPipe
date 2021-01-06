@@ -15,6 +15,8 @@ ReadsDir='data'/$Study/'trimmedData'
 AlignmentsDir='data'/$Study/'Alignments'
 CountsDir='data'/$Study/'RawCounts'  
 NormDir='data'/$Study/'NormData'
+AnnotationDir='Annotation'
+GenomeRefDir='GenomeRef'
 # Create directories for a study in case they don't already exist:
 source $ScriptsFolder/createDir.sh
 DirArray=($BaseDir/$StudyDir \
@@ -25,7 +27,9 @@ DirArray=($BaseDir/$StudyDir \
           $BaseDir/$ReadsDir \
           $BaseDir/$AlignmentsDir \
           $BaseDir/$CountsDir \
-	  $BaseDir/$NormDir)
+	  $BaseDir/$NormDir
+          $BaseDir/$AnnotationDir \
+	  $BaseDir/$GenomeRefDir)
 createDirIfMissing ${DirArray[@]}
 
 # Download raw data - fastq files:
