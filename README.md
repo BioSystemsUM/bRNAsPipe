@@ -1,4 +1,5 @@
 ## Pipeline for RNAseq and Microarray analysis
+Pipeline and scripts used for raw microarray and RNAseq data analysis in "Tânia Barata, Vítor Vieira, Rúben Rodrigues, Ricardo Pires das Neves, Miguel Rocha, Reconstruction of tissue-specific genome-scale metabolic models for human cancer stem cells, Computers in Biology and Medicine, Volume 142, 2022, 105177, ISSN 0010-4825, https://doi.org/10.1016/j.compbiomed.2021.105177"
 ### RNAseq
 Pipeline for RNAseq was developed in Bash and it uses docker containers. Requirements to run are: *Linux* system and *Podman*. It is recommended to use ensembl annotation and ensembl genome reference files.
  - Example annotation file: [Homo_sapiens.GRCh38.99.gtf.gz](http://ftp.ensembl.org/pub/release-99/gtf/homo_sapiens/Homo_sapiens.GRCh38.99.gtf.gz)
